@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">  
+  <title>Smart Cookie Landing Page</title>
+  
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/smartcookies.jpg" alt="Smart Cookie Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="helpdesk.html">Support</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+    <div class="registration-container">
+        <h1 class="registration-title">Registration Form</h1>
+        <form class="registration-form">
+            <div class="form-group user-type-group">
+                <label for="userType" class="form-label">👤 User Type <span class="required">*</span></label>
+                <select id="userType" name="userType" class="form-select" required>
+                    <option value="">Select User Type</option>
+                    <option value="student">Student</option>
+                    <option value="sponsor">Sponsor</option>
+                    <option value="mentor">Mentor</option>
+                </select>
+            </div>
+            <div class="form-group full-name-group">
+                <label for="fullName" class="form-label">📛 Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group email-group">
+                <label for="email" class="form-label">📧 Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group mobile-group">
+                <label for="mobile" class="form-label">📱 Mobile Number <span class="required">*</span></label>
+                <div class="mobile-input">
+                    <select id="countryCode" name="countryCode" class="form-select country-code-select" required>
+                        <option value="+91">+91</option>
+                        <option value="+1">+1</option>
+                        <option value="+44">+44</option>
+                        <!-- Add more country codes as needed -->
+                    </select>
+                    <input type="tel" id="mobile" name="mobile" class="form-input mobile-number-input" placeholder="Enter your mobile number" required>
+                </div>
+            </div>
+            <div class="form-group state-group">
+                <label for="state" class="form-label">🌐 State</label>
+                <input type="text" id="state" name="state" class="form-input" placeholder="Enter your state">
+            </div>
+            <div class="form-group city-group">
+                <label for="city" class="form-label">🏙️ City</label>
+                <input type="text" id="city" name="city" class="form-input" placeholder="Enter your city">
+            </div>
+            <div class="form-group college-name-group">
+                <label for="collegeName" class="form-label">🏫 College Name <span class="required">*</span></label>
+                <input type="text" id="collegeName" name="collegeName" class="form-input" placeholder="Enter your college name" required>
+            </div>
+            <div class="form-group school-id-group">
+                <label for="schoolId" class="form-label">🆔 School ID</label>
+                <input type="text" id="schoolId" name="schoolId" class="form-input" placeholder="Enter your school ID">
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="button register-button">Register</button>
+                <button type="button" class="button back-button">Back</button>
+            </div>
+        </form>
+    </div>
+
+    <style>
+    
+        .registration-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .registration-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-input, .form-select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-top: 5px;
+            margin-left: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-input:hover, .form-select:hover {
+            border-color: #007BFF;
+        }
+
+        .mobile-input {
+            display: flex;
+        }
+
+        .country-code-select {
+            width: 30%;
+            margin-right: 10px;
+        }
+
+        .mobile-number-input {
+            width: 70%;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .register-button {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .register-button:hover {
+            background-color: #218838;
+        }
+
+        .back-button {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
+        .back-button:hover {
+            background-color: #c82333;
+        }
+
+        .required {
+            color: red;
+            font-size: 1.2em;
+        }
+
+        .form-label:hover {
+            border-bottom: 3px solid #007BFF;
+        }
+    </style>
+
+
+
+<!-- Footer Start-->
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section logo-section">
+            <img src="Images/smartcookies.jpg" alt="Smart Cookie Logo" class="footer-logo">
+            <h2>Smart Cookie believes in the power of youth.</h2>
+        </div>
+        <div class="footer-section">
+            <h3>Pages</h3>
+            <ul>
+                <li><a href="#">📅 Events</a></li>
+                <li><a href="#">❓ Help</a></li>
+                <li><a href="#">📞 Contact Us</a></li>
+                <li><a href="#">🗺️ Map</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Info</h3>
+            <ul>
+                <li><a href="#">👨‍🎓 Students</a></li>
+                <li><a href="#">🏫 School/College</a></li>
+                <li><a href="#">👩‍🏫 Teachers</a></li>
+                <li><a href="#">👨‍👩‍👧‍👦 Parents</a></li>
+                <li><a href="#">🤝 Vendors/Sponsors</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/people/Smartcookie-Rewards/100069906574229/">📘 Facebook</a></li>
+                <li><a href="https://twitter.com/smartcookieinn">🐦 Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/smart-cookie-1537aa210/">🔗 LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/smartcookie360/">📸 Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="help@smartcookie.in">📧 Email Us</a></li>
+                <li><a href="tel:+917219193815">📞 Call Us: +91-7219193815</a></li>
+                <li><a href="#">🏢 Office Locations</a></li>
+            </ul>
+        </div>
+        <div class="footer-section map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.515386487014!2d73.81017967422015!3d18.50559786963334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfc78084d5eb%3A0xf2b3ff7d826fa2fe!2sBlue%20Planet%20InfoSolutions%20India%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1720462804249!5m2!1sen!2sin"
+            width="100%" 
+            height="200" 
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
+<!-- Footer Enn-->
+
+
+
+
+
+
+
+     <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
