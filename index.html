@@ -11,6 +11,61 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <style>
+    .enbut{
+        position: relative;
+        background-color: transparent;
+        /* border: 1px solid black; */
+        color: #121212;
+        font-size: 16px;
+        text-transform: lowercase;
+        transition: color 400ms;
+
+    }
+    .enbut::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        display: inline-block;
+        background-color: #121212;
+        transform: scaleX(0);
+        transform-origin: right;
+        z-index: -1;
+        transition: transform 400ms; 
+    }
+    .enbut:hover{
+        color: #ffffff;
+
+    }
+    .enbut:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+  
+.apps-container {
+    width: 100%;
+    height: 180px;
+    border: 2px solid #1f7cbf; /* Adjust border style as needed */
+    border-radius: 15px; /* Adjust border radius as needed */
+    padding: 5px; /* Adjust padding as needed */
+    display: inline-block; /* Ensure the container wraps around the content */
+}
+
+.apps-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.application-link {
+    margin-right: 400px; /* Adjust spacing between elements as needed */
+}
+
+.application-link:last-child {
+    margin-right: 0px; /* Remove margin from the last element */
+}
+
+</style>
 </head>
 <body>
     <nav class="navbar">
@@ -39,71 +94,73 @@
     </div>
 
 <!------Entaties Section ----------->
-<div class="container">
-    <h1 class="heading">Entity</h1>
+
+       <div class="container">
+    <h1 class="heading">Entity For Login</h1>
 <div class="entities-container">
     <a href="#" class="entity">
         <img src="Images/entaties/student.gif" alt="Student">
-        <div class="entity-name">Student</div>
+        <div class="entity-name"><button class="enbut">Student</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/teacher.gif" alt="Teacher">
-        <div class="entity-name">Teacher</div>
+        <div class="entity-name"><button class="enbut">Teacher</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/principal.png" alt="School Admin">
-        <div class="entity-name">School Admin</div>
+        <div class="entity-name"><button class="enbut">School Admin</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/teamwork.gif" alt="School Admin Staff">
-        <div class="entity-name">School Admin Staff</div>
+        <div class="entity-name"><button class="enbut">School Admin Staff</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/emp.png" alt="Employee">
-        <div class="entity-name">Employee</div>
+        <div class="entity-name"><button class="enbut">Employee</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/management-consulting.gif" alt="Manager">
-        <div class="entity-name">Manager</div>
+        <div class="entity-name"><button class="enbut">Manager</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/hr.gif" alt="HR Admin">
-        <div class="entity-name">HR Admin</div>
+        <div class="entity-name"><button class="enbut">HR Admin</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/teamwork.gif" alt="HR Admin Staff">
-        <div class="entity-name">HR Admin Staff</div>
+        <div class="entity-name"><button class="enbut">HR Admin Staff</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/ceo.png" alt="Group Admin">
-        <div class="entity-name">Group Admin</div>
+        <div class="entity-name"><button class="enbut">Group Admin</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/labour-market.gif" alt="Group Admin Staff">
-        <div class="entity-name">Group Admin Staff</div>
+        <div class="entity-name"><button class="enbut">Group Admin Staff</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/ceo.png" alt="Cookie Admin">
-        <div class="entity-name">Cookie Admin</div>
+        <div class="entity-name"><button class="enbut">Cookie Admin</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/teamwork.gif" alt="Cookie Admin Staff">
-        <div class="entity-name">Cookie Admin Staff</div>
+        <div class="entity-name"><button class="enbut">Cookie Admin Staff</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/deal-removebg-preview.png" alt="Sponsors">
-        <div class="entity-name">Sponsors</div>
+        <div class="entity-name"><button class="enbut">Sponsors</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/family.gif" alt="Parent">
-        <div class="entity-name">Parent</div>
+        <div class="entity-name"><button class="enbut">Parent</button></div>
     </a>
     <a href="#" class="entity">
         <img src="Images/entaties/sales-enablement.gif" alt="Sales Person">
-        <div class="entity-name">Sales Person</div>
+        <div class="entity-name"><button class="enbut">Sales Person</button></div>
     </a>
 </div>
 </div>
+
 
 
 
@@ -111,24 +168,25 @@
     <section class="apps-section">
         <h2 class="section-title">Download Our Apps From Here</h2>
         <div class="apps-container">
-            <div class="apps-list">
-                <div class="application-link">
-                    <a href="student-app-link.html">
-                        <img src="Images/student.png" alt="Student App Logo" class="application-logo">
-                        <p class="application-name">Student App</p>
-                    </a>
-                </div>
-                <div class="application-link">
-                    <a href="teacher-app-link.html">
-                        <img src="Images/teacher.png" alt="Teacher App Logo" class="application-logo">
-                        <p class="application-name">Teacher App</p>
-                    </a>
-                </div>
-                <div class="application-link">
-                    <a href="corporate-app-link.html">
-                        <img src="Images/procoin.png" alt="Corporate App Logo" class="application-logo">
-                        <p class="application-name">Corporate App</p>
-                    </a>
+                <div class="apps-list">
+                    <div class="application-link">
+                        <a href="student-app-link.html">
+                            <img src="Images/student.png" alt="Student App Logo" class="application-logo">
+                            <p class="application-name">Student App</p>
+                        </a>
+                    </div>
+                    <div class="application-link">
+                        <a href="teacher-app-link.html">
+                            <img src="Images/teacher.png" alt="Teacher App Logo" class="application-logo">
+                            <p class="application-name">Teacher App</p>
+                        </a>
+                    </div>
+                    <div class="application-link">
+                        <a href="corporate-app-link.html">
+                            <img src="Images/procoin.png" alt="Corporate App Logo" class="application-logo">
+                            <p class="application-name">Corporate App</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="slideshow">
